@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "electron:dev": "concurrently --kill-others \"vite\" \"wait-on tcp:5173 && electron .\"",
-    "electron:build": "npm run build && electron-builder"
+    "electron:build": "npm run build && electron-builder",
+    "electron:release": "npm run build && electron-builder --publish always"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.1.1",
@@ -63,6 +64,12 @@
       "perMachine": false,
       "allowToChangeInstallationDirectory": true,
       "deleteAppDataOnUninstall": false
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Shesqi",
+      "repo": "GitHub-Store",
+      "releaseType": "draft"
     }
   }
 }
