@@ -2,6 +2,8 @@
 
 Десктопное приложение для поиска, просмотра и скачивания релизов GitHub-репозиториев.
 
+![Main screen](./screenshots/Main%20screen.png)
+
 ## Стек
 
 - **React 18** + **TypeScript**

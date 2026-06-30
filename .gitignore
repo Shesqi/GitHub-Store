@@ -9,3 +9,4 @@ build/icon.ico
 .env
 .DS_Store
 Thumbs.db
+.history/
